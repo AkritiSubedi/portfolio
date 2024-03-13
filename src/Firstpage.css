@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.firstpagecont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background: #31065A;
+}
+.dcont1{
+    max-width: 1100px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 150px 20px;
+}
+
+.firstpage_img{
+    min-height: 200px;
+    min-width: 202px;
+    max-width: 392px;
+    max-height: 392px;
+    height: 100%;
+    width: 100%;
+ }
+
+.firstpage_img img{
+    height: 100%;
+    width: 100%;
+}
+.firstpage_name {
+    color: #FFF;
+    font-family: "Exo 2";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    flex-shrink: 0;
+}
+.firstpage_body {
+    color: #FFF;
+    font-family: "Exo 2";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.body{
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 100%;
+
+    
+}
+
+@media only screen and (max-width: 820px) {
+    .firstpage{
+        width: 100vw;
+        height: 100%;
+        margin:0;
+    }
+
+    .dcont1{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap:0px;
+        margin:0;
+        height: 100%;
+    }
+    .desc{
+        font-size: 0.8rem;
+    }
+    .firstpage_body{
+        font-size: 1.3rem;
+    }
+    .firstpage_name{
+        font-size: 1.8rem;
+    }
+    .firstpage_body1{
+        font-size: 2rem;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+
+    .dcont1 {
+        margin-bottom: 20px;
+    }
+
+    .body {
+        margin: 10px; 
+    }
+    
+
+    
+}
+
+
+.firstpage_body1{
+    color: #F86F03;
+    font-family: "Exo 2";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20px;
+
+
+}
+.desc{
+    color: #FFF;
+    text-wrap: wrap;
+    font-family: "Exo 2";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 573px;
+    width: 100%;
+    height: 48px;
+    flex-shrink: 0;
+    margin-bottom: 30px;
+}
+
+
+.button{
+    max-height: 50px;
+    height: 100%;
+    max-width: 200px;
+    width: 100%;
+    margin-top:30px;
+    border-radius: 10px;
+    background: #F86F03;
+    color: #FFF;
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 10px;
+}

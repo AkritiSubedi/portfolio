@@ -1,0 +1,13 @@
+.ak_icon{
+    display: flex;
+    justify-content:center;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(46, 40, 40);
+    align-items: center;
+}
+.ak_icon .ak_socialmedia{
+    margin-right: 30px;
+    color: #fff;
+    font-size: 25px;
+}

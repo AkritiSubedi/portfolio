@@ -1,0 +1,68 @@
+// import React from "react";
+// import "./Project.css";
+// import { motion } from "framer-motion";
+// import { fadeIn } from "./variants";
+
+// function Project() {
+//   return (
+//     <div className="project">
+//       <h1>My Project</h1>
+//       <div 
+      
+//       className="product1">
+//         <div className="image1">
+//           <img className="img1" src="Screenshot (221).png" alt="" />
+//           <div className="name1">
+//             Weather app Lorem ipsum dolor sit, amet consectetur adipisicing
+//             elit. Reiciendis reprehenderit repellendus tenetur tempore molestiae
+//             laboriosam vero illo animi veniam. Temporibus, veritatis tempore?
+//             Vitae ea sint molestiae nobis, culpa et dolorum.
+//           </div>
+//           <a
+//             className="project_clickmore"
+//             href="https://akritiweather.netlify.app/"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             click more
+//           </a>
+//         </div>
+//         <div className="image1">
+//           <img className="img1" src="Screenshot (223).png" alt="" />
+//           <div className="name1">
+//             Keeper App Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+//             Reiciendis reprehenderit repellendus tenetur tempore molestiae
+//             laboriosam vero illo animi veniam. Temporibus, veritatis tempore?
+//             Vitae ea sint molestiae nobis, culpa et dolorum.
+//           </div>
+//           <a
+//             className="project_clickmore"
+//             href="https://akritikeeperapp.netlify.app/"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             click more
+//           </a>
+//         </div>
+//         <div className="image1">
+//           <img className="img1" src="" alt="" />
+//           <div className="name1">
+//             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
+//             reprehenderit repellendus tenetur tempore molestiae laboriosam vero
+//             illo animi veniam. Temporibus, veritatis tempore? Vitae ea sint
+//             molestiae nobis, culpa et dolorum.
+//           </div>
+//           <a
+//             className="project_clickmore"
+//             href="https://akritiweather.netlify.app/"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             click more
+//           </a>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+// export default Project;
