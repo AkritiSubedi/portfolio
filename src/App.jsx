@@ -3,10 +3,9 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./Navbar";
-import Body from "./Body";
+import Aboutme from "./Aboutme";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./Footer";
-import Contact from "./Contact";
 import Skills from "./Skills";
 import Project from "./Project";
 import Firstpage from "./Firstpage";
@@ -17,14 +16,19 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Firstpage />} />
-          <Route path="/body" element={<Body />} />
-          <Route path="/contact" element={<Form />} />
-          {/* <Route path="/contact" element={<Contact />} /> */}
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/project" element={<Project />} />
-        </Routes>
+        {/* <Routes> */}
+        <Firstpage />
+        <Aboutme />
+        <Skills/>
+        <Project />
+        <Form />
+        {/* <Route path="/" element={<Firstpage />} /> */}
+        {/* <Route path="/body" element={<Body />} /> */}
+        {/* <Route path="/contact" element={<Form />} /> */}
+        {/* <Route path="/contact" element={<Contact />} /> */}
+        {/* <Route path="/skills" element={<Skills />} /> */}
+        {/* <Route path="/project" element={<Project />} /> */}
+        {/* </Routes> */}
         <Footer />
       </Router>
     </>

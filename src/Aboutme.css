@@ -20,6 +20,9 @@
 
 
 }
+.aboutme{
+    margin-top: 100px;
+}
 .dcont11{
     width: 100%;
     display: flex;
@@ -33,6 +36,7 @@
     flex-direction: row;
     justify-content: center;
     gap:125px;
+    width: 80%;
 }
 .banner-image{
     min-height: 338px;
@@ -41,10 +45,12 @@
     max-height: 392px;
     height: 100%;
     width: 100%;
+    cursor: pointer;
+    margin-top: -20px;
  }
  .banner-image:hover{
-    transform: scale(1.2);
-    z-index: 1;
+    /* transform: scale(1.2);
+    z-index: 1; */
 
 }
 
@@ -165,4 +171,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    transition: background 0.3s, box-shadow 0.3s;
+    cursor: pointer;
 }
+.readmore:hover {
+    background: #170550;
+    color: #fff;
+    box-shadow: 8px 8px 10px 0px #200e5d;
+  }

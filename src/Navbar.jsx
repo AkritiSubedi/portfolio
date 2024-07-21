@@ -1,85 +1,37 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { GiHamburgerMenu } from 'react-icons/gi'; // Assuming you have the required icon component
+import React from "react";
+import { Link } from "react-scroll";
 import "./Navbar.css";
 
 function Navbar(props) {
-  const [show, setShow] = useState(false);
-
-  function toggleMenu() {
-    setShow(!show);
-  }
-
   return (
-    <div>
-      <div className="ak_navbar">
+    <div className="ak_navbar">
       <ul className="nav-bar">
-              <NavLink to="/">
-                <li className="ak_nav1">Home</li>
-              </NavLink>
-              <NavLink to="/Body">
-                <li className="ak_nav1">About Me</li>
-              </NavLink>
-              <NavLink to="skills">
-                <li className="ak_nav1">Skills</li>
-              </NavLink>
-              <NavLink to="project">
-                <li className="ak_nav1">Project</li>
-              </NavLink>
-              <NavLink to="contact">
-                <li className="ak_nav1">Contact</li>
-              </NavLink>
-            </ul>
-        {/* <nav>
-          {show ? (
-            <ul className="nav-bar">
-              <NavLink to="/">
-                <li className="ak_nav1">Home</li>
-              </NavLink>
-              <NavLink to="/Body">
-                <li className="ak_nav1">About Me</li>
-              </NavLink>
-              <NavLink to="skills">
-                <li className="ak_nav1">Skills</li>
-              </NavLink>
-              <NavLink to="project">
-                <li className="ak_nav1">Project</li>
-              </NavLink>
-              <NavLink to="contact">
-                <li className="ak_nav1">Contact</li>
-              </NavLink>
-            </ul>
-          ) : (
-            <></>
-          )}
-          <div className="navbar">
-            <div className="hicon" >
-              <div className="ham"
-              onClick={toggleMenu}
-              >
-              <GiHamburgerMenu />
-              </div>
-            </div>
-            <ul className="nav-bar">
-              <NavLink to="/">
-                <li className="ak_nav2">Home</li>
-              </NavLink>
-              <NavLink to="/Body">
-                <li className="ak_nav2">About Me</li>
-              </NavLink>
-              <NavLink to="skills">
-                <li className="ak_nav2">Skills</li>
-              </NavLink>
-              <NavLink to="project">
-                <li className="ak_nav2">Project</li>
-              </NavLink>
-              <NavLink to="contact">
-                <li className="ak_nav2">Contact</li>
-              </NavLink>
-            </ul>
-          </div>
-        </nav> */}
-      </div>
+        <li className="ak_nav1">
+          <Link to="home" spy={true} smooth={true} duration={1000}>
+             <a href="">Home</a>
+          </Link>
+        </li>
+        <li className="ak_nav1">
+          <Link to="AboutMe" spy={true} smooth={true} duration={1000}>
+            <a href="">About Me</a>
+          </Link>
+        </li>
+        <li className="ak_nav1">
+          <Link to="skills" spy={true} smooth={true} duration={1000}>
+            <a href="">Skills</a>
+          </Link>
+        </li>
+        <li className="ak_nav1">
+          <Link to="project" spy={true} smooth={true} duration={1000}>
+            <a href="">Project</a>
+          </Link>
+        </li>
+        <li className="ak_nav1">
+          <Link to="form" spy={true} smooth={true} duration={1000}>
+            <a href="">Contact</a>
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 }

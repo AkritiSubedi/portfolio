@@ -1,29 +1,34 @@
 import React from "react";
-import { FaFacebook } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
+import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { CgMail } from "react-icons/cg";
+import { SiGmail } from "react-icons/si";
 import "./Footer.css";
 
 function Footer() {
   return (
+    <>
+    
     <div className="ak_icon">
+      <a className="ak_socialmedia" href="https://github.com/AkritiSubedi">
+      <FaGithub />
+      </a>
+
       <a
         className="ak_socialmedia"
-        href="https://www.facebook.com/aakusubedi075"
+        href="https://www.linkedin.com/in/akriti-subedi-92b0711ab/"
       >
-        <FaFacebook />
-      </a>
-      <a className="ak_socialmedia" href="https://www.instagram.com/akriti__subedi/">
-        <AiFillInstagram />
-      </a>
-      <a className="ak_socialmedia" href="https://www.linkedin.com/in/akriti-subedi-92b0711ab/">
         <FaLinkedin />
       </a>
-      <a className="ak_socialmedia" href="https://twitter.com/Its_me_Akriti">
-        <FaXTwitter />
+      
+      <a
+        className="ak_socialmedia"
+        href="mailto:aakusubedi075@gmail.com"
+      >
+        <SiGmail />
       </a>
     </div>
+    </>
   );
 }
 export default Footer;

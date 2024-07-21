@@ -14,20 +14,34 @@
     align-items: center;
     display: flex;
 }
+.headings{
+    margin-top: 100px;
+    
+    /* margin-bottom: 50px; */
+  }
+
 .image1{
     max-width: 400px;
     width: 100%;
-    max-height: 800px;
+    max-height: 900px;
     height: 100%;
     display: flex;
-    background: rgb(198, 186, 186) 50% / cover no-repeat;
+    background: rgb(226, 221, 221) 50% / cover no-repeat;
     border-radius: 20px;
-    margin: 20px 0px 20px 49px;
+    margin: 100px 0px 20px 49px;
     overflow: hidden;
     font-weight: 600;
     flex-wrap: wrap;
+    transition: background 0.3s, transform 0.3s;
+    
 }
+.image1:hover {
+    background: rgb(231, 221, 221) 50% / cover no-repeat;
+    transform: scale(1.05);
+  }
 .img1{
+    cursor: pointer;
+    transition: transform 0.3s;
     margin-top: 50px;
     margin-left: 50px;
     max-width: 300px;
@@ -37,6 +51,10 @@
     border-radius: 20px 20px 20px 20px;
     background: rgb(198, 186, 186) 50% / cover no-repeat;
 }
+/* .img1:hover {
+    transform: scale(0.8);
+  } */
+
 .name1{
     text-align: justify;
     font-family: Nunito;
@@ -47,7 +65,9 @@
     font-weight: 500;
     line-height: normal;
     margin: 50px 50px 50px 50px;
+    
 }
+
 @media only screen and (max-width: 428px) {
     
     .product1{
@@ -90,7 +110,7 @@
 }
 .project_clickmore{
     margin-bottom: 50px;
-    margin-left: 35%;
+    margin-left: 30%;
     height: 25px;
     padding: 10px;
     justify-content: center;
@@ -102,4 +122,8 @@
     color: #fff;
     padding-left: 25px;
     font-size: 18px;
+    transition: transform 0.3s;
 }
+.project_clickmore:hover {
+    transform: scale(1.05);
+  }

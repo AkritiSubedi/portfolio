@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Form.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
+import { MdLocalPhone } from "react-icons/md";
 import { TiLocationArrowOutline } from "react-icons/ti";
 
 function Form() {
@@ -16,21 +17,22 @@ function Form() {
   const [isSubmit, setIsSubmit] = useState(false);
 
   function handleChange(event) {
-    let value = event.target.value;
-    let name = event.target.name;
+    const { name, value } = event.target;
     setFormValues((prev) => ({
       ...prev,
       [name]: value,
     }));
   }
-
   function handleClick(event) {
     event.preventDefault();
     setFormErrors(() => validate(formValues));
-
-    // onclick={()=>fnc(values)}
     setIsSubmit(true);
   }
+  const textareaStyle = {
+    background: formValues.message ? "white" : "rgba(255, 228, 195, 0.30)",
+    background: formValues.subject ? "white" : "rgba(255, 228, 195, 0.30)",
+
+  };
   useEffect(() => {
     console.log(formErrors);
     if (Object.keys(formErrors).length === 0 && isSubmit) {
@@ -55,29 +57,37 @@ function Form() {
   };
 
   return (
-    <div className="contact_form">
-      <h1>My Contact</h1>
+    <div id="form" className="contact_form">
+      <h1 className="heading">My Contact</h1>
 
       <div className="maincontainer">
         <div className="thirdcontainer">
           <div className="contact1">
             <div className="ak_cont">
+              <div className="topic">Let's Work Together</div>
               <div className="ak_num">
                 <div className="ic2">
-                  <FaPhoneAlt />
+                <a href="tel:+9779863786960">
+                    <MdLocalPhone />
+                  </a>
                 </div>
-                <div className="email">9863786960</div>
+                <div className="email"><a href="tel:+9779863786960">9863786960</a></div>
               </div>
 
               <div className="ak_num">
                 <div className="ic2">
-                  <CgMail />
+                <a href="mailto:aakusubedi075@gmail.com">
+    <CgMail />
+  </a>
                 </div>
-                <div className="email">aakusubedi075@gmail.com</div>
+                <div className="email"><a href="mailto:aakusubedi075@gmail.com">aakusubedi075@gmail.com</a></div>
               </div>
               <div className="ak_num">
                 <div className="ic2">
+                  <a href="">
+
                   <TiLocationArrowOutline />
+                  </a>
                 </div>
                 <div className="email">Kalanki, Kathmandu</div>
               </div>
@@ -86,9 +96,8 @@ function Form() {
         </div>
         <div className="form">
           <form
-            action="https://formspree.io/f/xwkgqqyq"
-            method="POST"
-            // onSubmit={handleSubmit}
+             action="https://formspree.io/f/xwkgjeyq"
+             method="POST"
           >
             <label className="name" htmlFor="name"></label>
             <input
@@ -98,6 +107,8 @@ function Form() {
               name="name"
               placeholder="Full Name"
               required
+              value={formValues.name}
+              onChange={handleChange}
             />
 
             <label className="name" htmlFor="email"></label>
@@ -111,7 +122,7 @@ function Form() {
               onChange={handleChange}
               required
             />
-            <p>{formErrors.name}</p>
+            <p>{formErrors.email}</p>
             <label className="name" htmlFor="subject"></label>
             <input
               className="name"
@@ -119,7 +130,9 @@ function Form() {
               id="subject"
               name="subject"
               placeholder="Subject"
+              value={formValues.subject}
               required
+              onChange={handleChange}
             />
 
             <label className="name" htmlFor="message"></label>
@@ -131,6 +144,9 @@ function Form() {
               rows="4"
               cols="50"
               form="usrform"
+              value={formValues.message}
+              onChange={handleChange}
+              style={textareaStyle}
               required
             ></textarea>
 
