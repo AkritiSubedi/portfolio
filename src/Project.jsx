@@ -21,7 +21,7 @@ function Project() {
     },
     {
       id: 3,
-      img: "../public/Screenshot (223).png",
+      img: "../Screenshot (223).png",
       heading: "Keeper App",
       href: "https://akritikeeperapp.netlify.app/",
       click: "click more",
@@ -29,7 +29,7 @@ function Project() {
     },
     {
       id: 4,
-      img: "../public/Screenshot (224).png",
+      img: "../Screenshot (224).png",
       heading: "Todo List",
       href: "https://akriti1todolist.netlify.app/",
       click: "click more",
